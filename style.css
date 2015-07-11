@@ -1,0 +1,247 @@
+body {
+	margin: 0;
+	padding: 0;
+	font-family: 'content-font', Arial;
+//	font-size: 24px;
+}
+
+@font-face {
+font-family: 'content-font';
+//src: url('fonts/OLORT___.TTF'); 
+//src: url('fonts/l_10646.ttf');
+//src: url('fonts/LUCON.TTF');
+//src: url('fonts/devgothic.TTF');
+/src: url('fonts/keyrusMedium.ttf');
+//src: url('fonts/he/ln.ttf');
+//src: url('fonts/visitor2.ttf');
+//src: url('fonts/parvl.ttf');
+//src: url('fonts/qhyts.ttf');
+}
+
+
+
+.header {
+  color: #000000;
+  background-color: #cccccc;
+  height: 60px;
+  background:url('images/mark-printed.jpgd');
+  background-position: right 30px top -140px;
+}
+
+.output {
+  color: #000000;
+  //background-color: #443344;
+  padding-top: 10px;
+  padding-bottom: 0px;
+  padding-left: 10px;
+  padding-right: 10px;
+  text-align: left;
+  margin-left: 130px;
+  margin-right: 80px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+
+
+.addbutton {
+  position:fixed;
+  top: 170px;
+  left: 20px;       
+  width:100px;   
+  height: 50px;   
+  background: #aaddee;
+  z-index:999;
+  
+  font-family: 'content-font', Arial;
+  font-weight: bold;
+  text-align: center;
+  display: inline;
+}
+
+.addbutton p {vertical-align: middle;}
+
+.addbutton:hover {
+	background: #a54455;
+	cursor: pointer;
+}
+
+.table0 {
+		//background-color: #443344;
+		width: 1000px;
+		border-collapse:separate; 
+		border-spacing: 1px 5px;
+		padding-right: 20px;
+		}
+
+.table0 tr {height: 50px;}
+			
+.table0 .scorerow1 td {background: #aaaaaa;}
+.table0 .scorerow2 td {background: #b8b8b8;}
+
+.table0 u {
+	color: #0000ff;
+}
+
+.table0 .scorerow1 .mod-cell, .table0 .scorerow1 .delete-cell {
+	1background: #cccccc;
+}
+.table0 .scorerow2 .mod-cell, .table0 .scorerow2 .delete-cell {
+	1background: #cccccc;
+}
+
+
+.table0 td:first-child {border-radius: 5px 0px 0px 5px;}
+.table0 td:last-child {border-radius: 0px 5px 5px 0px; text-align: center;}
+.table0 .mod-cell {text-align: center; background: #123456;}
+
+.table0 tr:hover td {background: #aa88dd;}
+
+.table0 .delete-cell:hover {background: #a54455; cursor:pointer;}
+.table0 .delete-cell:hover u {color: #000000;}
+
+.table0 .mod-cell:hover {background: #a54455; cursor:pointer;}
+.table0 .mod-cell:hover u {color: #000000;}
+
+.table0 .centered-cell {text-align: center;}
+
+
+
+
+
+
+
+
+
+
+#bg-shade {
+width:100%;
+height:100%;
+opacity:.85;
+top:0;
+left:0;
+display:none;
+position:fixed;
+background-color:#151720;
+overflow:auto;
+z-index: 1100;
+}
+
+#add-form, #modify-form {
+display:none;
+position:fixed;
+
+width:350px;
+height:450px;
+
+top:50%;
+left:50%;
+transform: translate(-50%, -50%);
+-webkit-transform: translate(-50%, -50%);
+
+background-color:#665566;
+
+overflow:auto;
+z-index: 1200;
+
+padding: 20px 50px 50px 50px;
+
+border: 1px solid #772277;
+border-radius: 5px;
+
+//background: url("images/kp.jpg");
+//background-repeat: no-repeat;
+//background-size: cover;
+
+}
+
+
+.form {
+
+}
+
+.form h1 {
+	margin-top: 30px;
+	margin-bottom: 35px;
+}
+
+.form label {
+	display: inline-block;
+	width: 100px;
+	height: 40px;
+	margin-left: 17px;
+	color: #000000;
+}
+
+.form input[type="text"], input[type="radio"] {
+	line-height: 30px;
+	vertical-align: middle;
+	margin-top: -4px;
+	//font-family: 'content-font';
+	font-size: 16px;
+	font-weight: 500;
+	padding-left: 10px;
+}
+
+.form input[type="text"] {
+	width: 200px;
+}
+
+
+::-webkit-input-placeholder {opacity:.20}
+::-moz-placeholder          {opacity:.20}
+:-moz-placeholder           {opacity:.20}
+:-ms-input-placeholder      {opacity:.20}
+
+:focus::-webkit-input-placeholder {color: transparent}
+:focus::-moz-placeholder          {color: transparent}
+:focus:-moz-placeholder           {color: transparent}
+:focus:-ms-input-placeholder      {color: transparent}
+
+
+
+
+.submitbutton {
+  position:fixed;
+  top: 420px;
+  left: 50px;       
+  width:100px;   
+  height: 50px;   
+  background: #aaddee;
+  z-index:999;
+  
+  font-weight: bold;
+  text-align: center;
+  display: inline;
+  
+}
+
+.submitbutton p {vertical-align: middle;}
+
+.submitbutton:hover {
+	background: #a54455;
+	cursor: pointer;
+}
+
+
+.cancelbutton {
+  position:fixed;
+  top: 420px;
+  left: 160px;       
+  width:100px;   
+  height: 50px;   
+  background: #aaddee;
+  z-index:999;
+  
+  font-family: 'content-font', Arial;
+  font-weight: bold;
+  text-align: center;
+  display: inline;
+}
+
+.cancelbutton p {vertical-align: middle;}
+
+.cancelbutton:hover {
+	background: #a54455;
+	cursor: pointer;
+}
